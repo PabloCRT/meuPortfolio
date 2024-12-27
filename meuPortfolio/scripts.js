@@ -10,7 +10,7 @@ window.addEventListener('scroll', function(){
         elemento.style.opacity="1"
         elemento.style.transition=".5s ease"
     }
-})
+});
 
 window.addEventListener('scroll', function(){
     const navBar = this.document.getElementById('navBar');
@@ -26,7 +26,7 @@ window.addEventListener('scroll', function(){
         navBar.style.transition="ease .5s"
         navBar.style.boxShadow="0px 5px 10px rgb(171, 182, 192)"
     }
-})
+});
 
 /** Parte do scroll suave após apertar o link na navBar (INÍCIO) */
 function scrollToTop(){
