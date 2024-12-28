@@ -3,11 +3,13 @@
     margin: 0;
 }
 :root{
-    --fundoBody: rgb(209, 220, 230);
-    --brancoCaixas: rgb(196, 208, 219);
-    --cinza: rgba(153, 153, 153, 0.699);
-    --azul: rgb(0, 140, 255);
-    --preto: black;
+    --fundoBody: rgb(22, 20, 20);
+    --cinza: rgb(17, 17, 17);
+    --amarelo: rgb(255, 230, 0);
+    --amareloOpacidadeMenor: rgba(255, 230, 0, 0.651);
+    --branco: white;
+    --cinza: rgb(58, 58, 58);
+    --pretoCaixas: rgb(8, 8, 8);
 }
 
 body{
@@ -15,6 +17,7 @@ body{
     background-color: var(--fundoBody);
     overflow-x: hidden;
     font-size: 2vh;
+    color: var(--branco);
 }
 
 nav{
@@ -27,7 +30,7 @@ nav{
 
     & button{
         font-size: 2.5vh;
-        color: var(--cinza);
+        color: var(--amarelo);
         border: none;
         background-color: transparent;
         cursor: pointer;
@@ -39,16 +42,22 @@ nav{
 
 /* Apresentação (INÍCIO) */
 header{
+    position: relative;
     text-align: center;
     height: 100vh;
     max-width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.212), rgba(255, 251, 2, 0.212)), url(assets/digitação.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
 
     & h1{
         position: absolute;
         font-size: 15vh;
         z-index: 1000;
-        color: var(--cinza);
-        margin-top: 7.65%;
+        color: var(--amareloOpacidadeMenor);
+        margin-top: 12.62%;
         margin-left: 0;
         animation: contrateMe 2s ease forwards;
     }
@@ -56,8 +65,9 @@ header{
     & h2{
         position: relative;
         font-size: 10vh;
-        padding-top: 10%;
+        padding-top: 15%;
         z-index: 1000;
+        color: var(--branco);
     }
 }
 
@@ -72,16 +82,34 @@ header{
 }
 /* Apresentação (FIM) */
 
+/* animação scroll dos projetos (INÍVIO) */
+@keyframes scrollProjs {
+    from{
+        background-color: transparent;
+        border: solid 5px rgb(255, 242, 127);
+    }
+
+    to{
+        background-color: transparent;
+        box-shadow: 0px 0px 10px rgb(255, 230, 0), 0px 0px 20px rgb(255, 230, 0), 
+        inset 0px 0px 10px rgb(255, 230, 0), inset 0px 0px 20px rgb(255, 230, 0);
+        border: solid 5px rgb(255, 242, 127);
+    }
+}
+/* animação scroll dos projetos (FIM) */
+
 .projetos{
     width: 90%;
     margin-left: 5%;
-    background-color: var(--brancoCaixas);
+    margin-top: 5%;
+    background-color: var(--pretoCaixas);
     text-align: center;
     border-radius: 5px;
     padding-bottom: 5%;
     & h1{
         padding: 5%;
         font-size: 5vh;
+        color: var(--branco);
     }
 
     & .flexBox{
@@ -100,6 +128,9 @@ header{
                 background-color: var(--cinza);
                 transition: ease .8s;
                 border-radius: 5px;
+                animation: scrollProjs 5s ease forwards;
+                animation-timeline: view();
+                animation-range: cover 0% cover 70%;
     
                 & img{
                     height: 20vh;
@@ -116,7 +147,7 @@ header{
 }
 
 .texto{
-    background-color: var(--brancoCaixas);
+    background-color: var(--pretoCaixas);
     max-width: 90%;
     margin-left: 5%;
     text-align: center;
@@ -126,6 +157,7 @@ header{
     & h1{
         font-size: 5vh;
         padding: 5%;
+        color: var(--branco);
     }
 
     & .tecs{
@@ -143,7 +175,7 @@ header{
 }
 
 .textoTec{
-    background-color: var(--brancoCaixas);
+    background-color: var(--pretoCaixas);
     max-width: 90%;
     margin-left: 5%;
     text-align: center;
@@ -154,6 +186,7 @@ header{
     & h1{
         font-size: 5vh;
         padding: 5%;
+        color: var(--branco);
     }
 
     & .linguagens{
@@ -162,17 +195,52 @@ header{
         padding-left: 5%;
         padding-right: 5%;
 
-        & .ling{
-            display: flex;
+        & .imgFantasma{
             text-align: justify;
+            position: relative;
             margin-top: 5%;
             background-color: var(--cinza);
             padding: 1%;
             border-radius: 5px;
 
-            & img{
-                height: 5vh;
-                transition: ease .5s;
+            animation: scroll 5s ease forwards;
+            animation-timeline: view();
+            animation-range: cover 0% cover 40%;
+
+            & .divSeta{
+                text-align: center;
+
+                & button{
+                    background-color: transparent;
+                    border: none;
+
+                    & img{
+                        height: 2vh;
+                        transition: ease 1s forwards;
+                    }
+                }
+            }
+
+            & .imageG{
+                text-align: center;
+                padding: 1%;
+
+                & img{
+                    height: 30vh;
+                    display: none;
+                }
+            }
+
+            & a{
+
+                & img{
+                    height: 5vh;
+                    transition: ease .5s;
+                }
+            }
+
+            & .ling{
+                display: flex;
             }
 
             & p{
@@ -180,6 +248,12 @@ header{
             }
         }
     }
+}
+
+.divSeta button img:hover{
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: ease 1s forwards;
 }
 
 .ling img:hover{
@@ -205,8 +279,9 @@ footer{
     max-width: 100%;
     padding: 5%;
     margin-bottom: 5%;
-    background-color: var(--brancoCaixas);
+    background-color: var(--pretoCaixas);
     padding-bottom: 8%;
+    color: var(--branco);
 
     & .perfil{
         width: 100%;
