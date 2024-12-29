@@ -47,3 +47,8 @@ function scrollToTop(){
     window.scrollTo(0, 0);
 }
 /** Parte do scroll suave após apertar o link na navBar (FIM) */
+
+function scrollTosection(){
+    const section = document.getElementById("sobreMim");
+    section.style.scrollBehavior="smooth";
+}
