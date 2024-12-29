@@ -70,6 +70,14 @@ header{
         z-index: 1000;
         color: var(--branco);
     }
+
+    & a{
+
+        & .setaBranca{
+            height: 5vh;
+            width: 5vw;
+        }
+    }
 }
 
 @keyframes contrateMe {
@@ -82,6 +90,26 @@ header{
     }
 }
 /* Apresentação (FIM) */
+
+.SobreMim{
+    max-width: 90%;
+    margin-left: 5%;
+    padding: 2% 0% 2% 0%;
+    text-align: justify;
+
+    background-color: var(--pretoCaixas);
+    margin-top: 5%;
+    border-radius: 5px;
+
+    & h1{
+        margin: 0% 2% 0% 2%;
+    }
+
+    & p{
+        margin: 2% 2% 0% 2%;
+        text-align: justify;
+    }
+}
 
 /* animação scroll dos projetos (INÍVIO) */
 @keyframes scrollProjs {
