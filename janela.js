@@ -6,8 +6,9 @@ function janela(){
     
     imagem.style.opacity="1"
     seta.style.rotate="180deg"
+    seta.style.transition=".5s ease"
 
-    document.getElementById("imgGhost").src = "assets/android.png";
+    document.getElementById("imgGhost").src = "assets/exeHTML.png";
 
     botao.setAttribute('onclick', "fechar()"); /** Troca a função do evento onclick */
 }
@@ -18,6 +19,7 @@ function fechar(){
     
     imagem.style.opacity="0"
     seta.style.rotate="360deg"
+    seta.style.transition=".5s ease"
 
     document.getElementById("imgGhost").src = " ";
 
@@ -33,8 +35,9 @@ function janela2(){
     
     imagem.style.opacity="1"
     seta.style.rotate="180deg"
+    seta.style.transition=".5s ease"
 
-    document.getElementById("imgGhost2").src = "assets/android.png";
+    document.getElementById("imgGhost2").src = "assets/exeCSS.jpg";
 
     botao.setAttribute('onclick', "fechar2()"); /** Troca a função do evento onclick */
 }
@@ -45,6 +48,7 @@ function fechar2(){
     
     imagem.style.opacity="0"
     seta.style.rotate="360deg"
+    seta.style.transition=".5s ease"
 
     document.getElementById("imgGhost2").src = " ";
 
@@ -60,8 +64,9 @@ function janela3(){
     
     imagem.style.opacity="1"
     seta.style.rotate="180deg"
+    seta.style.transition=".5s ease"
 
-    document.getElementById("imgGhost3").src = "assets/android.png";
+    document.getElementById("imgGhost3").src = "assets/exeJS.jpg";
 
     botao.setAttribute('onclick', "fechar3()"); /** Troca a função do evento onclick */
 }
@@ -72,6 +77,7 @@ function fechar3(){
     
     imagem.style.opacity="0"
     seta.style.rotate="360deg"
+    seta.style.transition=".5s ease"
 
     document.getElementById("imgGhost3").src = " ";
 
@@ -87,8 +93,9 @@ function janela4(){
     
     imagem.style.opacity="1"
     seta.style.rotate="180deg"
+    seta.style.transition=".5s ease"
 
-    document.getElementById("imgGhost4").src = "assets/android.png";
+    document.getElementById("imgGhost4").src = "assets/exeKT.jpg";
 
     botao.setAttribute('onclick', "fechar4()"); /** Troca a função do evento onclick */
 }
@@ -99,6 +106,7 @@ function fechar4(){
     
     imagem.style.opacity="0"
     seta.style.rotate="360deg"
+    seta.style.transition=".5s ease"
 
     document.getElementById("imgGhost4").src = " ";
 
@@ -114,8 +122,9 @@ function janela5(){
     
     imagem.style.opacity="1"
     seta.style.rotate="180deg"
+    seta.style.transition=".5s ease"
 
-    document.getElementById("imgGhost5").src = "assets/android.png";
+    document.getElementById("imgGhost5").src = "assets/exePY.png";
 
     botao.setAttribute('onclick', "fechar5()"); /** Troca a função do evento onclick */
 }
@@ -126,6 +135,7 @@ function fechar5(){
     
     imagem.style.opacity="0"
     seta.style.rotate="360deg"
+    seta.style.transition=".5s ease"
 
     document.getElementById("imgGhost5").src = " ";
 
