@@ -155,7 +155,7 @@ header{
                 height: 300px;
                 width: 300px;
                 background-color: var(--cinza);
-                transition: ease 1s;
+                transition: all 1s;
                 cursor: pointer;
                 border-radius: 5px;
                 animation: scrollProjs 5s ease forwards;
@@ -174,7 +174,7 @@ header{
 .flexBox:hover > :not(:hover){
     opacity: .4;
     transform: scale(0.9);
-    transition: .5s ease;
+    transition: all .5s ease;
 }
 
 .texto{
@@ -316,6 +316,8 @@ footer{
         & img{
             height: 40vh;
             border-radius: 50%;
+            transition: ease .5s;
+            border: solid var(--amarelo) 2px;
         }
     }
 
@@ -342,6 +344,12 @@ footer{
             }
         }
     }
+}
+
+footer .perfil img:hover{
+    transform: scale(1.05);
+    transition: all .5s forwards;
+    box-shadow: -5px 15px 10px black;
 }
 
 .contato:hover{
