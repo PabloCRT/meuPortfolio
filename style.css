@@ -20,6 +20,10 @@ body{
     color: var(--branco);
 }
 
+strong{
+    color: var(--amarelo);
+}
+
 nav{
     height: 20vh;
     max-width: 100%;
