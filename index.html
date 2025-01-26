@@ -16,7 +16,11 @@
 <body>
 
     <nav id="navBar">
-        <button id="linkInt" onclick="scrollToTop('cabeca')"><b>TOPO</b></button>
+        <a href="#corpo" id="linkInt"><b>About me</b></a>
+        <a href="#projetos" id="navegacao1"><b>Projetos</b></a>
+        <a href="#habilidades" id="navegacao2"><b>Habilidades</b></a>
+        <a href="#linguagens" id="navegacao3"><b>Linguagens</b></a>
+        <a href="#contatos" id="navegacao4"><b>Contatos</b></a>
     </nav>
 
     <header id="topo">
@@ -26,18 +30,28 @@
         </div>
     </header>
 
-    <section class="SobreMim" id="sobreMim">
-        <h1>Apresentações</h1>
-        
-        <p>
-            Me chamo Pablo e tenho 18 anos. <br><br>
-            Comecei um curso técnico na área de <strong>Desenvolvimento de Sistemas</strong> em 2022 e o concluí em 2024. Desde então, tenho o objetivo de me tornar um programador Full Stack. <br><br>
-            Veja abaixo alguns dos meus projetos.
-        </p>
-    </section>
-    
+    <div class="apresentacao">
+        <section class="SobreMim" id="sobreMim">
+            <div class="central"><button><b>Apresentações</b></button></div>
+            
+            <p>
+                Me chamo Pablo e tenho 18 anos. <br><br>
+                Comecei um curso técnico na área de <strong>Desenvolvimento de Sistemas</strong> em 2022 e o concluí em 2024. Desde então, tenho o objetivo de me tornar um programador Full Stack. <br><br>
+            </p>
+        </section>
 
-    <section class="projetos">
+        <section class="SobreMim">
+            <div class="central"><button><b>O que esperar de mim.</b></button></div>
+
+            <p>
+                Busco aprender para me tornar um profissional de <strong>DS</strong> melhor; <br><br>
+                Faço bom uso de tudo ao longo desses anos de aprendizado, pois conhecimento é poder; <br><br>
+                Veja abaixo alguns dos meus projetos:
+            </p>
+        </section>
+    </div>    
+
+    <section class="projetos" id="projetos">
         <h1>Projetos</h1>
         <br>
         <div class="flexBox">
@@ -52,7 +66,7 @@
     <br>
     <br>
     <br>
-    <section class="texto">
+    <section class="texto" id="habilidades">
         <h1>Tecnologias conhecidas</h1>
         <br>
         <div class="tecs">
@@ -67,7 +81,7 @@
     <br>
     <br>
     <br>
-    <section class="textoTec">
+    <section class="textoTec" id="linguagens">
         <h1>Linguagens conhecidas</h1>
         <br>
         <div class="linguagens">
@@ -183,14 +197,14 @@
                     <p>@p_a_b_l_o_crt</p>
                 </a>
             </div>
-            
+
             <div class="contato">
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDZqkHxcFgrZMDxVffTCGcTTNpLvnSDmGZftzXzGLhFBHbNChtNvbQHZCkjShGxcNQtddGh" target="_blank">
-                    <img src="assets/gmail.png" alt="email">
-                    <p>pablooom.silva@gmail.com</p>
+                <a href="https://github.com/PabloCRT" target="_blank">
+                    <img src="assets/gitCinza.png" alt="email">
+                    <p>PabloCRT</p>
                 </a>
             </div>
-            
+
             <div class="contato">
                 <a href="https://www.linkedin.com/in/pablo-silva-807909343/" target="_blank">
                     <img src="assets/linkedin.png" alt="email">
@@ -199,13 +213,16 @@
             </div>
             
             <div class="contato">
-                <a href="https://github.com/PabloCRT" target="_blank">
-                    <img src="assets/gitCinza.png" alt="email">
-                    <p>PabloCRT</p>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDZqkHxcFgrZMDxVffTCGcTTNpLvnSDmGZftzXzGLhFBHbNChtNvbQHZCkjShGxcNQtddGh" target="_blank">
+                    <img src="assets/gmail.png" alt="email">
+                    <p>pablooom.silva@gmail.com</p>
                 </a>
             </div>
         </div>
     </footer>
+    <div class="direitosAutorais">
+        <p>&copy; 2025 | Pablo Silva</p>
+    </div>
     
 </body>
 </html>
