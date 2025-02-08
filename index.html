@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="corpo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT ME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="janela.css">
+    <link rel="stylesheet" href="menu.css">
+    <script src="scripts.js" async ></script>
+    <script src="janela.js"></script>
+    <script src="menu.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="navBar">
+        <div class="caixaNav" id="caixaNav">
+            <a href="#corpo" id="linkInt" onclick="fecharAposClick()"><button><b>About me</b></button></a>
+            <a href="#projetos" id="navegacao1" onclick="fecharAposClick()"><button><b>Projetos</b></button></a>
+            <a href="#habilidades" id="navegacao2" onclick="fecharAposClick()"><button><b>Habilidades</b></button></a>
+            <a href="#linguagens" id="navegacao3" onclick="fecharAposClick()"><button><b>Linguagens</b></button></a>
+            <a href="#contatos" id="navegacao4" onclick="fecharAposClick()"><button><b>Contatos</b></button></a>
+        </div>
+
+        <div class="menu-hamburguer">
+            <button onclick="abrirMenu()" id="botaoMenu">
+                <img src="assets/menuHamb.png" alt="" id="imgMenu">
+            </button>
+        </div>
+    </nav>
+
+    <header id="topo">
+        <div class="titulo">
+            <h1 id="contrate">ABOUT ME</h1>
+            <h2>Pablo Silva</h2>
+        </div>
+    </header>
+
+    <div class="apresentacao">
+        <section class="SobreMim" id="sobreMim">
+            <div class="central"><button><b>Apresentações</b></button></div>
+            
+            <p>
+                Me chamo Pablo e tenho 18 anos. <br><br>
+                Comecei um curso técnico na área de <strong>Desenvolvimento de Sistemas</strong> em 2022 e o concluí em 2024. Desde então, tenho o objetivo de me tornar um programador Full Stack. <br><br>
+            </p>
+        </section>
+
+        <section class="SobreMim">
+            <div class="central"><button><b>O que esperar de mim.</b></button></div>
+
+            <p>
+                Busco aprender para me tornar um profissional de <strong>DS</strong> melhor; <br><br>
+                Faço bom uso de tudo ao longo desses anos de aprendizado, pois conhecimento é poder; <br><br>
+                Veja abaixo alguns dos meus projetos:
+            </p>
+        </section>
+    </div>    
+
+    <section class="projetos" id="projetos">
+        <h1>Projetos</h1>
+        <br>
+        <div class="flexBox">
+            <a href="https://atena-tbr.com.br/" target="_blank"><div class="janela"><img src="assets/siteWeb.png" alt="siteAtena2024"><br><p>Web site para equipe de robótica <br>(Publicado)</p></div></a>
+
+            <a href="https://github.com/PabloCRT/projetoAndroid" target="_blank"><div class="janela"><img src="assets/android.png" alt="appAndroide"><br><p>projeto pessoal de App <br>(Não publicado)</p></div></a>
+            
+            <a href="https://pablocrt.github.io/gym/#home" target="_blank"><div class="janela"><img src="assets/siteWeb.png" alt="siteGym"><br><p>Projeto pessoal de web site <br>para academia<br>(Publicado)</p></div></a>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="texto" id="habilidades">
+        <h1>Tecnologias conhecidas</h1>
+        <br>
+        <div class="tecs">
+            <a href="https://code.visualstudio.com/" target="_blank"><img src="assets/vsCode.png" alt="vsCode"></a>
+            <a href="https://colab.research.google.com/" target="_blank"><img src="assets/gColab.png" alt="googleColab"></a>
+            <a href="https://github.com/" target="_blank"><img src="assets/github.png" alt="github"></a>
+            <a href="https://netbeans.apache.org/front/main/index.html" target="_blank"><img src="assets/netBean.png" alt="netBeans"></a>
+            <a href="http://surl.li/modizk" target="_blank"><img src="assets/androidStudio.png" alt="AndroidStudio"></a>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="textoTec" id="linguagens">
+        <h1>Linguagens conhecidas</h1>
+        <br>
+        <div class="linguagens">
+
+            <div class="imgFantasma" id="caixa1">
+                <div class="ling">
+                    <a href="https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos" target="_blank"><img src="assets/html5.png" alt=""></a>
+                    <p>HTML - Linguagem de marcação de texto. Utilizada para inserir elementos a um web site, como imagens e textos. (conhecimento mediano)</p>
+                </div>
+                <br>
+                <div class="divSeta">
+                    <button id="botao" onclick="janela()" class="botao">
+                        <img src="assets/seta.png" alt="" id="seta" class="seta">
+                    </button>
+                </div>
+
+                <div class="imageG">
+                    <img src="" alt=" " id="imgGhost" class="imgGhost">
+                </div>
+            </div>
+
+            <div class="imgFantasma" id="caixa2">
+                <div class="ling">
+                    <a href="https://www.hostinger.com.br/tutoriais/o-que-e-css-guia-basico-de-css" target="_blank"><img src="assets/css3.png" alt=""></a>
+                    <p>CSS - Linguagem de estilização. Utilizado para estilizar os itens inseridos na página. (conhecimento mediano)</p>
+                </div>
+                <br>
+                <div class="divSeta">
+                    <button id="botao2" onclick="janela2()" class="botao">
+                        <img src="assets/seta.png" alt="" id="seta2" class="seta">
+                    </button>
+                </div>
+
+                <div class="imageG">
+                    <img src="" alt=" " id="imgGhost2" class="imgGhost">
+                </div>
+            </div>
+
+            <div class="imgFantasma" id="caixa3">
+                <div class="ling">
+                    <a href="http://surl.li/txoodx" target="_blank"><img src="assets/javascript.png" alt=""></a>
+                    <p>JavaScript - Linguagem de programação. Normalmente utilizada para tornar o site mais interativo. (conhecimento mediano)</p>
+                </div>
+                <br>
+                <div class="divSeta">
+                    <button id="botao3" onclick="janela3()" class="botao">
+                        <img src="assets/seta.png" alt="" id="seta3" class="seta">
+                    </button>
+                </div>
+
+                <div class="imageG">
+                    <img src="" alt=" " id="imgGhost3" class="imgGhost">
+                </div>
+            </div>
+
+            <div class="imgFantasma" id="caixa4">
+                <div class="ling">
+                    <a href="https://kotlinlang.org/" target="_blank"><img src="assets/Kotlin.png" alt=""></a>
+                    <p>Kotlin - Linguagem de programação de alta tipagem. Normalmente usada no desenvolvimento Android. (conhecimento básico)</p>
+                </div>
+                <br>
+                <div class="divSeta">
+                    <button id="botao4" onclick="janela4()" class="botao">
+                        <img src="assets/seta.png" alt="" id="seta4" class="seta">
+                    </button>
+                </div>
+
+                <div class="imageG">
+                    <img src="" alt=" " id="imgGhost4" class="imgGhost">
+                </div>
+            </div>
+
+            <div class="imgFantasma" id="caixa5">
+                <div class="ling">
+                    <a href="https://www.python.org/" target="_blank"><img src="assets/python.png" alt=""></a>
+                    <p>Python - Linguagem de programação de alto nível. Utilizada em uma enorme variedade de propósitos, desde sites até IA. (conhecimento básico)</p>
+                </div>
+                <br>
+                <div class="divSeta">
+                    <button id="botao5" onclick="janela5()" class="botao">
+                        <img src="assets/seta.png" alt="" id="seta5" class="seta">
+                    </button>
+                </div>
+
+                <div class="imageG">
+                    <img src="" alt=" " id="imgGhost5" class="imgGhost">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer id="contatos">
+        <div class="perfil">
+            <img src="assets/meuPerfil.png" alt="minha foto">
+        </div>
+        <br>
+        <br>
+        <div class="flexBox flex2" id="escalaFooter">
+            <div class="contato">
+                <a href="https://wa.me/5531971894191?text=Ol%C3%A1!%20Eu%20me%20chamo%20Pablo.%20Como%20posso%20ajudar?%20" target="_blank">
+                    <img src="assets/telefone.png" alt="telefone">
+                    <p>(31)971894191</p>
+                </a>
+            </div>
+            
+            <div class="contato">
+                <a href="https://www.instagram.com/p_a_b_l_o_crt/" target="_blank">
+                    <img src="assets/insta.png" alt="instagram">
+                    <p>@p_a_b_l_o_crt</p>
+                </a>
+            </div>
+
+            <div class="contato">
+                <a href="https://github.com/PabloCRT" target="_blank">
+                    <img src="assets/gitCinza.png" alt="email">
+                    <p>PabloCRT</p>
+                </a>
+            </div>
+
+            <div class="contato">
+                <a href="https://www.linkedin.com/in/pablo-silva-807909343/" target="_blank">
+                    <img src="assets/linkedin.png" alt="email">
+                    <p>Pablo Silva</p>
+                </a>
+            </div>
+            
+            <div class="contato">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDZqkHxcFgrZMDxVffTCGcTTNpLvnSDmGZftzXzGLhFBHbNChtNvbQHZCkjShGxcNQtddGh" target="_blank">
+                    <img src="assets/gmail.png" alt="email">
+                    <p>pablooom.silva@gmail.com</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="direitosAutorais">
+        <p>&copy; 2025 | Pablo Silva</p>
+    </div>
+    
+</body>
+</html>
