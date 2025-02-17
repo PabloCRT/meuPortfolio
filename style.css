@@ -32,12 +32,7 @@
         text-align: center;
         height: 100vh;
         max-width: 100%;
-        background: linear-gradient(rgba(0, 0, 0, 0.274), rgba(255, 2, 2, 0.212)), url(assets/banner2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        object-fit: fill;
-        background-position: top center !important;
-        background-attachment: fixed;
+        background: var(--fundoBody);
     
         & h1{
             position: absolute;
