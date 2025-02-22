@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrossel.css">
+    <script src="nav.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href="#top"><p>Pablo <strong>Silva</strong></p></a>
+        </div>
+
+        <nav>
+            <a href="#about" id="linkNav"><button>Conheça-me</button>
+                <div class="span1"></div>
+            </a>
+
+            <a href="#proj" id="linkNav"><button>Projetos</button>
+                <div class="span1"></div>
+            </a>
+
+            <a href="#contatos" id="linkNav" class="contatos" onclick="navegacao()"><button>Contatos</button>
+                <div class="span1"></div>
+            </a>
+        </nav>
+
+    </header>
+
+    <section class="about" id="about">
+        <div class="texto">
+            <h1>Pablo Silva</h1>
+
+            <strong>Front End developer</strong>
+            <br>
+            <p>
+                Olá! Me chamo Pablo e tenho 18 anos. <br>
+                Desde pequeno sou apaixonado pela tecnologia e do que ela é capaz. <br>
+                Desfrutei do meu primeiro contato com a programação em 2021 e, a partir dali, <br>
+                nunca mais larguei a ideia de atuar nesta área.
+            </p>
+
+            <div class="contatos" id="contatos">
+                <div class="flexBox1">
+                    <a href="https://github.com/PabloCRT" target="_blank" id="git">
+                        <img src="images/github.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/pablo-silva-807909343/" target="_blank" id="linkedin">
+                        <img src="images/linkedin.png" alt="">
+                    </a>
+                </div>
+
+                <div class="flexBox2">
+                    <a href="https://wa.me/5531971894191?text=Ol%C3%A1!%20Eu%20me%20chamo%20Pablo.%20Como%20posso%20ajudar?%20" target="_blank" id="zap">
+                        <img src="images/whatsapp.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/p_a_b_l_o_crt/" target="_blank" id="insta">
+                        <img src="images/instagram.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="imagePerfil">
+            <img src="images/perfilPortifólio.png" alt="">
+
+            <div class="bordaAnimada1"></div>
+            <div class="bordaAnimada2"></div>
+            <div class="bordaAnimada3"></div>
+            <div class="bordaAnimada4"></div>
+        </div>
+    </section>
+    <div class="linhaBranca"></div>
+
+    <main>
+
+        <div class="container">
+            <div class="carrossel">
+                <div class="item" style="animation-delay: 0s;"><a href="https://atena-tbr.com.br" target="_blank">
+                    <img src="./images/siteAtena.png" alt="">
+                </a></div>
+                <div class="item" style="animation-delay: 5s;"><a href="https://pablocrt.github.io/gym/" target="_blank">
+                    <img src="./images/siteGym.png" alt="">
+                </a></div>
+                <div class="item" style="animation-delay: 10s;"><a href="https://pablocrt.github.io/login/" target="_blank">
+                    <img src="./images/siteLogin.png" alt="">
+                </a></div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <h1>Volte sempre!!!</h1>
+    </footer>
+    
+</body>
+</html>
