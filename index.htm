@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="carrossel.css">
+    <link rel="stylesheet" href="navResponsivo.css">
     <script src="nav.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,19 +23,23 @@
             <a href="#top"><p>Pablo <strong>Silva</strong></p></a>
         </div>
 
-        <nav>
-            <a href="#about" id="linkNav"><button>Conheça-me</button>
+        <button onclick="abrirMenu()" class="botaoHamb" id="botao"><img src="images/menuHamb.png" alt="" id="imgHamb"></button>
+
+        <nav id="nav">
+            <a href="#about" id="linkNav" onclick="fecharAposClick()"><button>Conheça-me</button>
                 <div class="span1"></div>
             </a>
 
-            <a href="#projs" id="linkNav"><button>Projetos</button>
+            <a href="#projs" id="linkNav" onclick="fecharAposClick()"><button>Projetos</button>
                 <div class="span1"></div>
             </a>
 
-            <a href="#top" id="linkNav" class="contatos" onclick="navegacao()"><button>Contatos</button>
+            <a href="#top" id="linkNav" class="contatos" onclick="navegacao()" onclick="fecharAposClick()"><button>Contatos</button>
                 <div class="span1"></div>
             </a>
         </nav>
+        
+        
 
     </header>
 
@@ -86,6 +91,22 @@
     <main>
 
         <div class="container">
+
+            <div class="carrossel2">
+                <div class="item2" style="animation-delay: 0s;"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+                    <img src="images/htmlOriginal.png" alt="">
+                </a></div>
+                <div class="item2" style="animation-delay: 5s;"><a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Styling_basics/What_is_CSS" target="_blank">
+                    <img src="images/cssOriginal.png" alt="">
+                </a></div>
+                <div class="item2" style="animation-delay: 10s;"><a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/What_is_JavaScript" target="_blank">
+                    <img src="images/jsOriginal.webp" alt="">
+                </a></div>
+                <div class="item2" style="animation-delay: 15s;"><a href="https://github.com/PabloCRT" target="_blank">
+                    <img src="images/gitOriginal.png" alt="">
+                </a></div>
+            </div>
+
             <div class="carrossel" id="projs">
                 <div class="item" style="animation-delay: 0s;"><a href="https://atena-tbr.com.br" target="_blank">
                     <img src="./images/siteAtena.png" alt="">
@@ -96,12 +117,14 @@
                 <div class="item" style="animation-delay: 10s;"><a href="https://pablocrt.github.io/login/" target="_blank">
                     <img src="./images/siteLogin.png" alt="">
                 </a></div>
+
             </div>
         </div>
 
     </main>
 
     <footer>
+        <img src="images/roboTchau-gif.gif" alt=""><br><br>
         <h1>Volte sempre!!!</h1>
     </footer>
     
