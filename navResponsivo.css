@@ -192,4 +192,8 @@
     .botaoHamb{
         display: none;
     }
+
+    #imgHamb{
+        display: none;
+    }
 }
