@@ -2,7 +2,7 @@ function abrirMenu(){
     let imagemMenu = document.getElementById("imgHamb");
     let botao = document.getElementById("botao");
     let caixaNav = document.getElementById("nav");
-    let novaURL1 = "assets/xHamb.png";
+    let novaURL1 = "images/xHamb.png";
 
     imagemMenu.src = novaURL1
 
@@ -16,7 +16,7 @@ function fecharMenu(){
     let imagemMenu = document.getElementById("imgHamb");
     let botao = document.getElementById("botao");
     let caixaNav = document.getElementById("nav");
-    let novaURL = "assets/menuHamb.png";
+    let novaURL = "images/menuHamb.png";
 
     imagemMenu.src = novaURL
     novaURL.onload
@@ -31,7 +31,7 @@ function fecharAposClick(){
     let imagemMenu = document.getElementById("imgHamb");
     let link = document.getElementById("botao");
     let caixaNav = document.getElementById("nav");
-    let novaURL = "assets/menuHamb.png";
+    let novaURL = "images/menuHamb.png";
 
     imagemMenu.src = novaURL
     novaURL.onload

@@ -188,4 +188,8 @@
             display: block;
         }
     }
+
+    .botaoHamb{
+        display: none;
+    }
 }
