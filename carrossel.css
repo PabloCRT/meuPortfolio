@@ -193,7 +193,18 @@
     
                 animation: autoRun 15s infinite linear;
     
-                & img{
+                & .imagemComputador{
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+    
+                    border-radius: 20px;
+    
+                    transition: 1s all;
+                }
+
+                & .imagemCelular{
+                    display: none;
                     position: relative;
                     height: 100%;
                     width: 100%;
