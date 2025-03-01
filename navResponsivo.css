@@ -1,4 +1,4 @@
-@media screen and (min-width: 360px) and (max-width: 900px) {
+@media screen and (min-width: 300px) and (max-width: 1999px) {
     :root{
         --branco: aliceblue;
         --fundo: rgb(0, 17, 31);
