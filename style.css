@@ -1,4 +1,4 @@
-@media screen and (min-width: 300px) and (max-width: 900px) {
+@media screen and (min-width: 360px) and (max-width: 900px) {
     *{
         padding: 0;
         margin: 0;
@@ -353,7 +353,7 @@
     
         & .texto{
             width: 40%;
-            margin: 15% 10%;
+            margin: 10% 10%;
     
             & h1{
                 font-size: 6vh;

@@ -1,4 +1,4 @@
-@media screen and (min-width: 300px) and (max-width: 900px) {
+@media screen and (min-width: 360px) and (max-width: 900px) {
     :root{
         --branco: aliceblue;
         --fundo: rgb(0, 17, 31);
@@ -19,6 +19,10 @@
         top: 0;
     
         z-index: 1000;
+
+        & .logo{
+            margin-top: 2%;
+        }
     
         & .logo, nav{
             width: 50%;
@@ -67,8 +71,13 @@
 
             & a{
                 margin-left: 30%;
+                margin-right: 20%;
+                padding: 2%;
+                border-radius: 10px;
+                text-align: center;
                 text-decoration: none;
                 color: var(--branco);
+                background: var(--azul);
         
                 margin-top: auto;
                 margin-bottom: auto;
@@ -190,10 +199,6 @@
     }
 
     .botaoHamb{
-        display: none;
-    }
-
-    #imgHamb{
         display: none;
     }
 }
