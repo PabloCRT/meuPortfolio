@@ -1,0 +1,204 @@
+@media screen and (min-width: 360px) and (max-width: 900px) {
+    :root{
+        --branco: aliceblue;
+        --fundo: rgb(0, 17, 31);
+        --azul: rgb(0, 153, 255);
+        --azulEscuro: rgb(0, 102, 255);
+        --fundoVidro: rgba(0, 11, 20, 0.438);
+        --pretoVidro: rgba(0, 2, 15, 0.432);
+    }
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        max-width: 100%;
+        height: 9vh;
+        background: linear-gradient(to top, var(--pretoVidro), var(--fundoVidro));
+    
+        position: sticky;
+        top: 0;
+    
+        z-index: 1000;
+
+        & .logo{
+            margin-top: 2%;
+        }
+    
+        & .logo, nav{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+    
+            & p{
+                font-family: "Pinyon Script", serif;
+                font-size: 5vh;
+            }
+
+            & a{
+                text-decoration: none;
+                color: var(--branco);
+            }
+        }
+
+        & .botaoHamb{
+            position: absolute;
+            height: 7vh;
+            z-index: 1000;
+
+            right: 0;
+            top: 0;
+
+            background: transparent;
+            border: none;
+
+            & img{
+                position: relative;
+                height: 100%;
+            }
+        }
+    
+        & nav{
+            position: absolute;
+            height: 100vh;
+            width: 50vw;
+            background-color: var(--pretoVidro);
+            display: flex;
+            flex-direction: column;
+            transition: 1s all;
+
+            right: -50%;
+
+            & a{
+                margin-left: 30%;
+                margin-right: 20%;
+                padding: 2%;
+                border-radius: 10px;
+                text-align: center;
+                text-decoration: none;
+                color: var(--branco);
+                background: var(--azul);
+        
+                margin-top: auto;
+                margin-bottom: auto;
+
+                & button{
+                    color: var(--branco);
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 2vh;
+                }
+            }
+        }
+    }
+    
+    .span1{
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    :root{
+        --branco: aliceblue;
+        --fundo: rgb(0, 17, 31);
+        --azul: rgb(0, 153, 255);
+        --azulEscuro: rgb(0, 102, 255);
+        --fundoVidro: rgba(0, 11, 20, 0.438);
+        --pretoVidro: rgba(0, 2, 15, 0.432);
+    }
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        max-width: 100%;
+        height: 9vh;
+        background: linear-gradient(to top, var(--pretoVidro), var(--fundoVidro));
+    
+        position: sticky;
+        top: 0;
+    
+        z-index: 1000;
+    
+        & .logo, nav{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+    
+            & p{
+                font-family: "Pinyon Script", serif;
+                font-size: 5vh;
+            }
+        }
+    
+        & a{
+            text-decoration: none;
+            color: var(--branco);
+    
+            margin-top: auto;
+            margin-bottom: auto;
+        
+            margin-left: -70%;
+        }
+        
+        & #linkNav{
+            position: relative;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-right: -70%;
+    
+            padding: 2%;
+    
+            transition: 1s all;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            overflow: hidden;
+    
+            & button{
+                color: var(--branco);
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                font-size: 2vh;
+            }
+        }
+    }
+    
+    .span1{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(to right, transparent, var(--azul));
+        height: .1vh;
+        width: 100%;
+    
+        animation: span1 1s linear forwards;
+    
+        display: none;
+    }
+    
+    @keyframes span1 {
+        0%{
+            transform: translateX(-100%);
+        }
+        
+        100%{
+            transform: translateX(100%);
+        }
+    }
+    
+    header nav a:hover{
+        transition: 1s all;
+    
+        & div{
+            display: block;
+        }
+    }
+
+    .botaoHamb{
+        display: none;
+    }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrossel.css">
+    <link rel="stylesheet" href="navResponsivo.css">
+    <script src="nav.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href="#top"><p>Pablo <strong>Silva</strong></p></a>
+        </div>
+
+        <button onclick="abrirMenu()" class="botaoHamb" id="botao"><img src="images/menuHamb.png" alt="" id="imgHamb"></button>
+
+        <nav id="nav">
+            <a href="#about" id="linkNav" onclick="fecharAposClick()"><button>Conheça-me</button>
+                <div class="span1"></div>
+            </a>
+
+            <a href="#proj" id="linkNav" onclick="fecharAposClick()"><button>Projetos</button>
+                <div class="span1"></div>
+            </a>
+
+            <a href="#top" id="linkNav" class="contatos" onclick="navegacao()" onclick="fecharAposClick()"><button>Contatos</button>
+                <div class="span1"></div>
+            </a>
+        </nav>
+        
+        
+
+    </header>
+
+    <section class="about" id="about">
+        <div class="texto">
+            <h1>Pablo Silva</h1>
+
+            <strong>Front End developer</strong>
+            <br>
+            <p>
+                Olá! Me chamo Pablo e tenho 18 anos. <br>
+                Desde pequeno sou apaixonado pela tecnologia e do que ela é capaz. <br>
+                Desfrutei do meu primeiro contato com a programação em 2021 e, a partir dali, <br>
+                nunca mais larguei a ideia de atuar nesta área.
+            </p>
+
+            <div class="cv">
+                <a href="arq/CV.docx">
+                    <button>Baixar CV.</button>
+                </a>
+            </div>
+
+            <div class="contatos" id="contatos">
+                <div class="flexBox1">
+                    <a href="https://github.com/PabloCRT" target="_blank" id="git">
+                        <img src="images/github.png" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/pablo-silva-807909343/" target="_blank" id="linkedin">
+                        <img src="images/linkedin.png" alt="">
+                    </a>
+                </div>
+
+                <div class="flexBox2">
+                    <a href="https://wa.me/5531971894191?text=Ol%C3%A1!%20Eu%20me%20chamo%20Pablo.%20Como%20posso%20ajudar?%20" target="_blank" id="zap">
+                        <img src="images/whatsapp.png" alt="">
+                    </a>
+                    <a href="https://www.instagram.com/p_a_b_l_o_crt/" target="_blank" id="insta">
+                        <img src="images/instagram.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="imagePerfil">
+            <img src="images/perfilPortifólio.png" alt="">
+
+            <div class="bordaAnimada1"></div>
+            <div class="bordaAnimada2"></div>
+            <div class="bordaAnimada3"></div>
+            <div class="bordaAnimada4"></div>
+        </div>
+    </section>
+    <div class="linhaBranca"></div>
+
+    <main>
+
+        <div class="titleProj" id="proj">
+            <h1>Projetos</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="carrossel2">
+                <div class="item2"><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
+                    <img src="images/htmlOriginal.png" alt="">
+                </a></div>
+                <div class="item2"><a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Styling_basics/What_is_CSS" target="_blank">
+                    <img src="images/cssOriginal.png" alt="">
+                </a></div>
+                <div class="item2"><a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting/What_is_JavaScript" target="_blank">
+                    <img src="images/jsOriginal.webp" alt="">
+                </a></div>
+                <div class="item2"><a href="https://github.com/PabloCRT" target="_blank">
+                    <img src="images/gitOriginal.png" alt="">
+                </a></div>
+            </div>
+
+            <div class="carrossel" id="projs">
+                <div class="item"><a href="https://atena-tbr.com.br" target="_blank">
+                    <img src="./images/siteAtena.png" alt="" class="imagemComputador">
+                    <img src="images/siteAtena-responsivo.png" alt="" class="imagemCelular">
+                </a></div>
+                <div class="item"><a href="https://pablocrt.github.io/gym/" target="_blank">
+                    <img src="./images/siteGym.png" alt="" class="imagemComputador">
+                    <img src="images/siteGym-responsivo.png" alt="" class="imagemCelular">
+                </a></div>
+                <div class="item"><a href="https://pablocrt.github.io/previsaoDoTempo/" target="_blank">
+                    <img src="./images/siteTempo.png" alt="" class="imagemComputador">
+                    <img src="images/siteTempo-responsivo.png" alt="" class="imagemCelular">
+                </a></div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <img src="images/roboTchau-gif.gif" alt=""><br><br>
+        <h1>Volte sempre!!!</h1>
+    </footer>
+    
+</body>
+</html>
