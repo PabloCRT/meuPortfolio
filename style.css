@@ -212,6 +212,11 @@
         margin-top: 10%;
         padding: 5% 0%;
         border-radius: 20px;
+        text-align: center;
+
+        & h1{
+            font-size: 4vh;
+        }
 
         & .flexProj{
             display: flex;
@@ -561,6 +566,11 @@
         margin-top: 10%;
         padding: 5% 0%;
         border-radius: 20px;
+        text-align: center;
+
+        & h1{
+            font-size: 4vh;
+        }
 
         & .flexProj{
             display: flex;
