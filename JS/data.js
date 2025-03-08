@@ -1,3 +1,5 @@
+//Este script atualiza a idade residida no portfólio conforme a data atual, relacionando-a à data de nascimento pré definida no mesmo.
+
 window.addEventListener('load', function(){
         //conseguindo data atual
         const data = new Date()
