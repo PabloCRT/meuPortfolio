@@ -202,6 +202,50 @@
             transform: rotate(360deg);
         }
     }
+
+    .projetosEstaticos{
+        max-width: 90%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--pretoVidro);
+        margin-top: 10%;
+        padding: 5% 0%;
+        border-radius: 20px;
+
+        & .flexProj{
+            display: flex;
+            flex-direction: column;
+
+            & a{
+                text-align: center;
+                padding: 2%;
+                background-color: var(--azul);
+                margin-top: 5%;
+                text-decoration: none;
+                border-radius: 20px;
+                width: 50%;
+                margin-left: 25%;
+
+                & .imgComputador{
+                    height: 20vh;
+                    border-radius: 20px;
+                    display: none !important;
+                }
+
+                & .imgCelular{
+                    border-radius: 10px;
+                    height: 20vh;
+                }
+
+                & p{
+                    text-align: center;
+                    color: var(--branco);
+                    margin-top: 2%;
+                }
+            }
+        }
+    }
     
     footer{
         margin-top: 40%;
@@ -508,6 +552,47 @@
         }
     }
     
+    .projetosEstaticos{
+        max-width: 90%;
+        margin-left: 7%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--pretoVidro);
+        margin-top: 10%;
+        padding: 5% 0%;
+        border-radius: 20px;
+
+        & .flexProj{
+            display: flex;
+            justify-content: space-around;
+
+            & a{
+                padding: 2%;
+                background-color: var(--azul);
+                margin-top: 5%;
+                text-decoration: none;
+                border-radius: 20px;
+
+                & .imgComputador{
+                    height: 20vh;
+                    border-radius: 20px;
+                }
+
+                & .imgCelular{
+                    border-radius: 10px;
+                    display: none !important;
+                    height: 20vh;
+                }
+
+                & p{
+                    text-align: center;
+                    color: var(--branco);
+                    margin-top: 2%;
+                }
+            }
+        }
+    }
+
     footer{
         margin-top: 10%;
         margin-bottom: 10%;
