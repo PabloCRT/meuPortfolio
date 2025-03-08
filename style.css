@@ -34,9 +34,9 @@
         font-family: Arial, Helvetica, sans-serif;
         color: var(--branco);
         background-color: var(--fundo);
-        overflow-x: hidden;
+        overflowX: hidden;
     }
-    
+
     .about{
         display: flex;
         flex-direction: column-reverse;
