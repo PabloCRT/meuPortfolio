@@ -1,0 +1,515 @@
+@media screen and (min-width: 360px) and (max-width: 900px) {
+    :root{
+        --branco: aliceblue;
+        --fundo: rgb(0, 17, 31);
+        --cinzaTexto: rgb(175, 175, 175);
+        --azul: rgb(0, 153, 255);
+        --azulEscuro: rgb(0, 102, 255);
+        --fundoVidro: rgba(0, 11, 20, 0.438);
+        --pretoVidro: rgba(0, 2, 15, 0.432);
+    }
+
+    .titleProj{
+        text-align: center;
+        margin-top: 2%;
+
+        & h1{
+            font-size: 5vh;
+        }
+    }
+
+    main{
+        padding: 5%;
+        max-width: 100vw;
+    }
+    
+    .container{
+        width: 100%;
+        padding: 0%;
+        overflow: hidden;
+        align-items: center;
+        position: relative;
+        margin-top: 20%;
+    
+        box-shadow: 0px 0px 10px 20px var(--pretoVidro) inset;
+        background: linear-gradient(to bottom, transparent, var(--fundoVidro), transparent);
+        border-radius: 25px;
+    
+        position: relative;
+
+        & .titleProj{
+            padding: 10%;
+        }
+    
+        & .carrossel{
+            width: 100%;
+            display: flex;
+            margin-top: 35%;
+            position: relative;
+    
+            & .item{
+                width: 25vw;
+                height: 25vh;
+                opacity: 1;
+                display: block;
+                position: absolute;
+                margin-top: 2%;
+    
+                left: 100%;
+    
+                animation: autoRun 15s infinite linear;
+    
+                & .imagemComputador{
+                    display: none;
+                }
+                
+                & .imagemCelular{
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+    
+                    border-radius: 20px;
+    
+                    transition: 1s all;
+                }
+            }
+        }
+    
+        & .carrossel2{
+            padding-bottom: 5%;
+            width: 90%;
+            display: flex;
+            margin: 5% 0% 5% 0%;
+            position: relative;
+    
+            & .item2{
+                height: 70px;
+                width: 70px;
+                opacity: 1;
+                display: block;
+                position: absolute;
+    
+                right: 100%;
+    
+                animation: autoRun2 20s infinite linear;
+    
+                & img{
+                    top: 0;
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+    
+                    border-radius: 20px;
+    
+                    transition: 1s all;
+                }
+            }
+        }
+
+        & .containerMaisProjetos{
+            padding: 5%;
+
+            & .maisProjetos{
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                background-color: var(--pretoVidro);
+                margin-top: 80%;
+                padding: 10%;
+                border-radius: 20px;
+                text-align: center;
+                overflow: hidden;
+
+                & h1{
+                    font-size: 4vh;
+                    padding: 10%;
+                }
+
+                & .ano{
+                    background-color: var(--pretoVidro);
+
+                    & h4{
+                        color: var(--branco);
+                        margin: auto auto;
+                    }
+                }
+
+                & .projeto-esquerda{
+                    width: 100%;
+                    padding: 0%;
+                    margin: 10% auto;
+                    /*animation: scroll-esquerda linear 1s;*/
+
+                    & .alcanceTexto{
+                        width: 100%; /* Caixa secundária que define o alcance do texto de 50% no deskTop */
+                        display: flex;
+                        flex-direction: column;
+
+                        & a{
+
+                            & #img-esquerda{
+                                height: 15vh;
+                                border-radius: 10px;
+                            }
+                        }
+                        & #texto-esquerda{
+                            text-align: justify;
+                            margin-top: 5%;
+                            padding-top: 5%;
+                            border-top: solid var(--azul) 1px;
+                            color: var(--cinzaTexto); /* Definir como transparente para a animação torná-lo visível */
+                        }
+                    }
+                }
+                
+                & .projeto-direita{
+                    width: 100%;
+                    padding: 0%;
+                    margin: 10% auto;
+                    /*animation: scroll-esquerda linear 1s;*/
+
+                    & .alcanceTexto{
+                        width: 100%; /* Caixa secundária que define o alcance do texto de 50% no deskTop */
+                        display: flex;
+                        flex-direction: column-reverse;
+
+                        & a{
+
+                            & #img-direita{
+                            height: 15vh;
+                            border-radius: 10px;
+                        }
+                        }
+                        & #texto-direita{
+                            text-align: justify;
+                            margin-top: 5%;
+                            padding-top: 5%;
+                            border-top: solid var(--azul) 1px;
+                            color: var(--cinzaTexto); /* Definir como transparente para a animação torná-lo visível */
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @keyframes autoRun {
+        0%{
+            left: 100%;
+        }
+        
+        100%{
+            left: -100%;
+        }
+    }
+    
+    @keyframes autoRun2 {
+        0%{
+            right: 100%;
+        }
+        
+        100%{
+            right: -100%;
+        }
+    }
+
+
+
+    .carrossel .item:nth-child(1){
+        animation-delay: 0s;
+    }
+    
+    .carrossel .item:nth-child(2){
+        animation-delay: 5s;
+    }
+    
+    .carrossel .item:nth-child(3){
+        animation-delay: 10s;
+    }
+    .carrossel .item:nth-child(4){
+        animation-delay: 15s;
+    }
+
+
+
+    .carrossel2 .item2:nth-child(1){
+        animation-delay: 0s;
+    }
+    
+    .carrossel2 .item2:nth-child(2){
+        animation-delay: 5s;
+    }
+    
+    .carrossel2 .item2:nth-child(3){
+        animation-delay: 10s;
+    }
+    
+    .carrossel2 .item2:nth-child(4){
+        animation-delay: 15s;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    :root{
+        --branco: aliceblue;
+        --fundo: rgb(0, 17, 31);
+        --cinzaTexto: rgb(175, 175, 175);
+        --azul: rgb(0, 153, 255);
+        --azulEscuro: rgb(0, 102, 255);
+        --fundoVidro: rgba(0, 11, 20, 0.438);
+        --pretoVidro: rgba(0, 2, 15, 0.432);
+    }
+
+    
+
+    .titleProj{
+        text-align: center;
+        margin-top: 2%;
+
+        & h1{
+            font-size: 5vh;
+        }
+    }
+    
+    main{
+        padding: 5%;
+        max-width: 100vw;
+    }
+
+    .container{
+        width: 100%;
+        padding: 0%;
+        overflow: hidden;
+        align-items: center;
+        position: relative;
+
+        box-shadow: 0px 0px 10px 20px var(--pretoVidro) inset;
+        background: linear-gradient(to bottom, transparent, var(--fundoVidro), transparent);
+        border-radius: 25px;
+    
+        & .carrossel{
+            width: 100%;
+            display: flex;
+            margin-top: 2%;
+            position: relative;
+    
+            & .item{
+                width: 25vw;
+                height: 25vh;
+                opacity: 1;
+                display: block;
+                position: absolute;
+                margin-top: 2%;
+    
+                left: 100%;
+    
+                animation: autoRun 15s infinite linear;
+    
+                & .imagemComputador{
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+    
+                    border-radius: 20px;
+    
+                    transition: 1s all;
+                }
+
+                & .imagemCelular{
+                    display: none;
+                }
+            }
+        }
+    
+        & .carrossel2{
+            padding-bottom: 5%;
+            width: 90%;
+            display: flex;
+            margin: 2% 0%;
+            position: relative;
+    
+            & .item2{
+                height: 70px;
+                width: 70px;
+                opacity: 1;
+                display: block;
+                position: absolute;
+    
+                right: 100%;
+    
+                animation: autoRun2 20s infinite linear;
+    
+                & img{
+                    top: 0;
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+    
+                    border-radius: 20px;
+    
+                    transition: 1s all;
+                }
+            }
+        }
+
+        & .containerMaisProjetos{
+            padding: 3%;
+
+            & .maisProjetos{
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                background-color: var(--pretoVidro);
+                margin-top: 20%;
+                padding: 5%;
+                border-radius: 20px;
+                overflow: hidden;
+
+                & h1{
+                    font-size: 4vh;
+                    margin-bottom: 5%;
+                    text-align: center;
+                }
+
+                & .esquerda{
+
+                    & .ano{
+                        padding-left: 3%;
+
+                        & h4{
+                            text-decoration: underline;
+                            color: var(--azul);
+                        }
+                    }
+
+                    & .projeto-esquerda{
+                        width: 100%;
+                        padding: 3%;
+                        display: flex;
+                        flex-direction: row;
+                        /*animation: scroll-esquerda linear 1s;*/
+
+                        & .alcanceTexto{
+                            width: 50%;
+                            gap: 2%;
+                            display: flex;
+                            text-align: justify;
+
+                            & #img-esquerda{
+                                height: 15vh;
+                                border-radius: 10px;
+                            }
+                            & #texto-esquerda{
+                                margin: auto;
+                                padding: 2%;
+                                border-left: solid var(--azul) 1px;
+                                color: var(--branco); /* Definir como transparente para a animação torná-lo visível */
+                            }
+                        }
+                    }
+                }
+                
+                & .direita{
+
+                    & .ano{
+                        text-align: end;
+
+                        & h4{
+                            text-decoration: underline;
+                            color: var(--azul);
+                        }
+                    }
+
+                    & .projeto-direita{
+                        width: 100%;
+                        padding: 3%;
+                        display: flex;
+                        flex-direction: row-reverse;
+
+                        & .alcanceTexto{
+                            width: 50%;
+                            gap: 2%;
+                            display: flex;
+                            text-align: justify;
+
+                            & #img-direita{
+                                height: 15vh;
+                                border-radius: 10px;
+                            }
+                            & #texto-direita{
+                                margin: auto;
+                                padding: 2%;
+                                border-right: solid var(--azul) 1px;
+                                color: var(--branco); /* Definir como transparente para a animação torná-lo visível */
+                            }
+                        }
+
+                        .preenchimento{
+                            width: 50%;
+                            height: 10vh;
+                        }
+                    }
+                }
+            }
+        }
+
+        
+    }
+    
+    @keyframes autoRun {
+        0%{
+            left: 100%;
+        }
+        
+        100%{
+            left: -100%;
+        }
+    }
+    
+    @keyframes autoRun2 {
+        0%{
+            right: 100%;
+        }
+        
+        100%{
+            right: -100%;
+        }
+    }
+    
+    .item img:hover{
+        scale: 1.1;
+        transition: 1s all;
+    }
+
+    .carrossel .item:nth-child(1){
+        animation-delay: 0s;
+    }
+    
+    .carrossel .item:nth-child(2){
+        animation-delay: 5s;
+    }
+    
+    .carrossel .item:nth-child(3){
+        animation-delay: 10s;
+    }
+
+
+
+    .carrossel2 .item2:nth-child(1){
+        animation-delay: 0s;
+    }
+    
+    .carrossel2 .item2:nth-child(2){
+        animation-delay: 5s;
+    }
+    
+    .carrossel2 .item2:nth-child(3){
+        animation-delay: 10s;
+    }
+    
+    .carrossel2 .item2:nth-child(4){
+        animation-delay: 15s;
+    }
+}
