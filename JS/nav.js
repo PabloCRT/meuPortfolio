@@ -41,9 +41,3 @@ function fecharAposClick(){
 
     botao.setAttribute('onclick', "abrirMenu()")
 }
-
-function navegacao(){
-    const redes = document.getElementById('contatos');
-
-    redes.style.background="black"
-}
